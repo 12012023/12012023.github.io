@@ -25,6 +25,25 @@ body {
 
 .cie {
     margin-top: -200px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+#sec {
+    position: absolute;
+    width: auto;
+    padding: 20px;
+    height: auto;
+    left: 35%;
+    margin-top: -250px;
+    z-index: 1;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background: linear-gradient(to right, #30CFD0 0%, #8132e1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h1 {
@@ -46,12 +65,15 @@ li span {
 
 #nxt {
     position: absolute;
-    width: 300px;
-    height: 100px;
-    left: 50%;
-    margin-left: 0px;
-    bottom: 0;
+    width: auto;
+    padding: 20px;
+    height: auto;
+    left: 42%;
+    margin-top: 200px;
     z-index: 10;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .merrywrap {
@@ -60,6 +82,20 @@ li span {
     left: 40px;
     bottom: 80px;
     top: 40px;
+}
+
+a:link,
+a:visited {
+    background-color: #518f0e;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    background-color: #5daa0b;
 }
 
 .giftbox {
@@ -89,7 +125,7 @@ li span {
     position: absolute;
     color: #fff;
     width: 100%;
-    content: "Buka Kadonya Ay!";
+    content: "Buka Kadonya Fii!";
     left: 0;
     bottom: 0;
     font-size: 30px;

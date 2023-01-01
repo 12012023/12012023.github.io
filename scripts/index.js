@@ -3,10 +3,11 @@ const head = document.getElementById('head');
 const giftbox = document.getElementById('merrywrap');
 const canvasC = document.getElementById('c');
 const nxt = document.getElementById('nxt');
+const sec = document.getElementById('sec');
 
 const config = {
     birthdate: 'Dec 26, 2021',
-    name: 'AISYAH LUTHFI'
+    name: 'LUTHFIII ^_^'
 };
 
 function hideEverything() {
@@ -15,6 +16,7 @@ function hideEverything() {
     giftbox.style.display = 'none';
     canvasC.style.display = 'none';
     nxt.style.display = 'none';
+    sec.style.display = 'none';
 }
 
 hideEverything();
@@ -411,7 +413,7 @@ x = setInterval(function() {
     function anim() {
         window.requestAnimationFrame(anim);
 
-        ctx.fillStyle = '#51FFF3';
+        ctx.fillStyle = '#E5BA73';
         ctx.fillRect(0, 0, w, h);
 
         ctx.translate(hw, hh);
@@ -481,6 +483,12 @@ x = setInterval(function() {
         function openBox() {
             if (step === 1) {
                 box.removeEventListener('click', openBox, false);
+
+                function message() {
+                    nxt.style.display = 'initial';
+                    sec.style.display = 'initial';
+                }
+                setTimeout(message, 7000);
             }
             stepClass(step);
             if (step === 3) {}
@@ -494,11 +502,14 @@ x = setInterval(function() {
 
         function showfireworks() {
             canvasC.style.display = 'initial';
-            nxt.style.display = 'initial';
+            // nxt.style.display = 'initial';
             setTimeout(anim, 1500);
         }
 
+
         init();
+
+
     }
 
     // if (distance < 0) {
