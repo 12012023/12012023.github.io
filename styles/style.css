@@ -68,12 +68,25 @@ li span {
     width: auto;
     padding: 20px;
     height: auto;
-    left: 42%;
+    left: 45%;
     margin-top: 200px;
     z-index: 10;
     border-radius: 10px;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
+}
+
+#clue {
+    position: absolute;
+    padding: 20px;
+    left: 0%;
+    margin-top: 200px;
+    z-index: 10;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    text-align: center;
 }
 
 .merrywrap {

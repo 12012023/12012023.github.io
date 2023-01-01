@@ -4,6 +4,7 @@ const giftbox = document.getElementById('merrywrap');
 const canvasC = document.getElementById('c');
 const nxt = document.getElementById('nxt');
 const sec = document.getElementById('sec');
+const clue = document.getElementById('clue');
 
 const config = {
     birthdate: 'Dec 26, 2021',
@@ -17,6 +18,7 @@ function hideEverything() {
     canvasC.style.display = 'none';
     nxt.style.display = 'none';
     sec.style.display = 'none';
+    clue.style.display = 'none';
 }
 
 hideEverything();
@@ -487,8 +489,9 @@ x = setInterval(function() {
                 function message() {
                     nxt.style.display = 'initial';
                     sec.style.display = 'initial';
+                    clue.style.display = 'initial';
                 }
-                setTimeout(message, 7000);
+                setTimeout(message, 10000);
             }
             stepClass(step);
             if (step === 3) {}
